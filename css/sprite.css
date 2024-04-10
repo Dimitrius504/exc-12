@@ -1,0 +1,62 @@
+@charset "UTF-8";
+body {
+  font-family: sans-serif;
+}
+/* STEP 1: Style Sonic */
+#sonic {
+	width: 135px;
+	height: 194px;
+	background: url("../images/sonic.png") left -277px top -16px;
+  background: url("../images/sonic.png");
+}
+.constant {
+	animation: constant steps(2) 3s infinite;
+	animation-delay: 1s; /* Adjust delay as needed */
+}
+
+.down {
+	animation: down steps(2) 1s 1;
+	/* background: url("../images/sonic.png") left -30 bottom -990; */
+  }
+
+
+@keyframes down {
+  0% {
+    /* background-position: -277px -12px; */
+    width: 135px;
+    height: 194px;
+    background: url("../images/sonic.png") left -20px top -640px;
+  }
+   50% {
+	width: 135px;
+    height: 194px;
+    background: url("../images/sonic.png") left -290px top -640px;
+  }
+  100% {
+	width: 120px;
+    height: 198px;
+    background: url("../images/sonic.png") left -590px top -700px;
+  }
+  
+}
+
+@keyframes constant {
+	0% {
+	  width: 135px;
+	  height: 194px;
+	  background: url("../images/sonic.png") left -277px top -16px;
+	}
+	 50% {
+	  width: 105px;
+	  height: 194px;
+	  background: url("../images/sonic.png") left -553px top -16px;
+	}
+	100% {
+	  width: 105px;
+	  height: 194px;
+	  background-position-x: -790px;
+	  background-position-y: -16px;
+	}
+  
+	
+  }
